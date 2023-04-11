@@ -31,8 +31,7 @@ export default class SearchScreen extends Component {
 
 		querySnapShot.forEach((doc) => {
 			this.setState({
-				allTransactions: [...this.state.allTransactions, doc.data()],
-				lastVisibleTransaction: doc,
+				allTransactions: [...this.state.allTransactions, doc.data()]
 			});
 		});
 	};
